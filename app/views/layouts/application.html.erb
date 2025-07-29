@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Omnicalc 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="/icon.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  </head>
+
+  <body class="pico">
+    <header>
+      <div class="container">
+        <nav>
+          <div>
+            <a href="/">
+              <strong>Calculators</strong>
+            </a>
+          </div>
+          <div>
+            <a href="/add">
+              Add
+            </a>
+          </div>
+          <div>
+            <a href="/subtract">
+              Subtract
+            </a>
+          </div>
+          <div>
+            <a href="/multiply">
+              Multiply
+            </a>
+          </div>
+          <div>
+            <a href="/divide">
+              Divide
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <%= yield %>
+      </div>
+    </main>
+  </body>
+</html>
